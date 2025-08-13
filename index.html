@@ -111,12 +111,12 @@
             let appointmentsData = [];
 
             // Set the date range
-            const startDate = new Date('2025-09-01T08:00:00');
-            const endDate = new Date('2025-09-21T23:59:59');
+            const startDate = new Date('2025-09-01T10:00:00');
+            const endDate = new Date('2025-09-21T17:59:59');
 
-            // Generate time slots from 8:00 AM to 8:00 PM (20:00)
-            const startHour = 8;
-            const endHour = 20;
+            // Generate time slots from 10:00 AM to 6:00 PM (18:00)
+            const startHour = 10;
+            const endHour = 18;
             const timeSlots = [];
             for (let i = startHour; i <= endHour; i++) {
                 const hour = i % 12 === 0 ? 12 : i % 12;
@@ -333,3 +333,4 @@
     </script>
 </body>
 </html>
+
